@@ -1,0 +1,1846 @@
+/*=======================unevarsele=====================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+:root{
+    --orange:  #eb4d55;
+    --white:  #fff;
+    --light-black:#bbb;
+    --blue:  #00bbf0;
+    --yellow: yellow;
+    --green: green;
+    --color-black: #333;
+    --color-dark-black:black;
+    ----sky-yellow: #F4E07A;
+    --brown: brown;
+    --gold: gold ;
+    --light-white: #F5F5F5;
+    --banner-black:rgba(0, 0, 0, 0.507);
+    --color-nav-blue: #012841;
+    --light-blue:#04465770;
+    ---deep-grean: #2bab0d;
+    --light-dark: #444;
+}
+.ban-btn{
+   display: inline-block;
+   text-transform: capitalize;
+   font-weight: 700;
+   background-color: var(--orange);
+   color: var(--white);
+   font-size: 15px;
+   padding: 15px 10px;
+   border-radius: 10px;
+   border: 2px solid var(--white);
+}
+.ban-btn:hover{
+    color: var(--blue);
+    background-color: var(--white);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.ban-btn i{
+    font-size: 16px;
+    color: var(--yellow);
+}
+.ban-btn span{
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   text-transform: uppercase;
+   margin-left: 10px;
+}
+.search-btn{
+    display: inline-block;
+    font-weight: 700;
+    background-color: var(--white);
+    color: var(--green);
+    text-transform: capitalize;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid var(---deep-grean);
+    display: flex;
+    align-items: center;
+}
+.search-btn:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.search-btn i{
+    font-size: 15px;
+    margin: 0 0 0 5px;
+}
+.com-gap{
+    padding: 100px 0;
+}
+img{
+    max-width: 100%;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figure img{
+    display: block;
+}
+.heading{
+    text-align: center;
+}
+h1,
+.heading-1{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+h2,
+.heading-2{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--green);
+    color: var(---deep-grean);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+h3,
+.heading-3{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--orange);
+}
+h4,
+.heading-4{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    color: var(---deep-grean);
+    line-height: 1.2;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+h5,
+.heading-5{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+.head-card p{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+hr{
+    margin-top: 20px;
+}
+/*================slik================*/
+.carousel{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.carousel-item{
+    padding: 5px;
+}
+.slick-prev{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+}
+.slick-next{
+    position: absolute;
+    left: 61%;
+    top: 3%;
+    transform: translateX(-61%);
+}
+/*======================top-header==================*/
+.top-header{
+    width: 100%;
+    /* padding: 10px 10px; */
+    background-color: var(--color-dark-black);
+    color: var(--white);
+    /* position: fixed;
+    z-index: 1; */
+}
+.top-header-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-social-icon a i{
+    /* background-color: var(--light-black); */
+    color: var(--white);
+    font-size: 15px;
+    margin: 0 2px;
+}
+.header-icon{
+    display: flex;
+    align-items: center;
+}
+.header-icon a{
+    text-transform: capitalize;
+    font-size: 500;
+    font-size: 15px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--blue);
+}
+.header-icon a i{
+    text-transform: capitalize;
+    font-size: 500;
+    font-size: 16px;
+    margin: 0 10px;
+    color: var(--white);
+}
+.header-icon a:hover{
+    color: var(--light-white);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+.header-social-icon a i:hover{
+    color: var(---deep-grean);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+/*=====================navbar====================*/
+.header-menu{
+   width: 100%;
+   padding: 10px 0;
+   background-color: var(---deep-grean);
+   /* margin-top: 44px; */
+   /* position: fixed;
+   z-index: 1; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 70px;
+    display: block;
+}
+.logo img{
+    border-radius: 50%;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.nav-menu li a span{
+    color: var(----sky-yellow);
+}
+.nav-menu li{
+    margin: 0px 20px;
+    font-weight: 400;
+}
+.nav-menu li a{
+    display: block;
+    /* display: inline-block; */
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--white);
+    position: relative;
+}
+.nav-menu li a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--light-white);
+    left: 0;
+    bottom: -10px; 
+    position: absolute;
+    transition: 1s all ease;
+}
+.nav-menu li a:hover::after{
+    width: 100%;
+    /* transition: all 0.2s ease; */
+}
+.nav-menu li a i{
+    font-size: 20px;
+    margin: 0 5px;
+    color: var(--blue);
+}
+.nav-menu li a:hover{
+    /* background-color: var(--white); */
+    color: var(----sky-yellow);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+.nav-menu li a span:hover{
+    background-color: var(--color-nav-blue);
+    color: var(--light-white);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+.hamburger{
+    color: var(--white);
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-btn{
+    position: relative;
+}
+.form-card{
+    position: absolute;
+    display: none;
+    background-color: var(---deep-grean);
+    top: 104%;
+    left: -50%;
+}
+.form-card form label{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+.form-card form label:hover{
+    color: var(----sky-yellow);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+.form-card input{
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--white);
+}
+.form-card input:hover{
+    background-color: var(----sky-yellow);
+    transform: scaleZ(1.5s);
+    transition: all 0.1s ease;
+}
+.form-card{
+    padding: 10px 0;
+}
+.nav-btn:hover .form-card{
+    display: block;
+}
+.form-card .ban-btn{
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 7px ;
+}
+/*============================banner========================*/
+.banner{
+    min-height: calc(100vh-100px);
+    padding: 200px 0;
+    background-image: url(../img/banner-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: var(--banner-black);
+    background-color: #01284188;
+    background-blend-mode: darken;
+}
+.banner-section-child{
+    padding: 10px 20px;
+    width: 50%;
+    background-color: var(--banner-black);
+    border-radius: 20px;
+    background-blend-mode: darken;
+}
+.banner-section-child span{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(----sky-yellow);
+}
+.banner-section-child p{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    font-weight: 400;
+    color: var(--white);
+}
+.banner .banner-text{
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 70px;
+    display: block;
+    color: var(----sky-yellow);
+}
+.banner-icon{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 2%;
+    font-size: 56px;
+    z-index: 1;
+}
+.banner-icon a i{
+    /* background-color: var(--color-nav-blue); */
+    color: var(---deep-grean);
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+/*=============================groceries===========================*/
+.groceries{
+    background-color: #87a2b3c2;
+    background-blend-mode: darken;
+}
+.groceries-section-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.card-layout{
+    background-color: var(--light-white);
+}
+.groceries-left-card,
+.groceries-right-card{
+    width: 50%;
+    padding: 0 15px;
+}
+.groceries-right-card .h4{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.groceries-right-card p{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-black);
+}
+.gro-det a i{
+    color: var(--green);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.gro-det a span{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.groceries-right-card p:hover{
+    transform: translateX(40px);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.groceries-right-card .h4:hover{
+    transform: translateX(40px);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.groceries-right-card .heading-2:hover{
+    transform: translateX(40px);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.groceries-right-card .gro-det:hover{
+    transform: translateX(40px);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.groceries-right-card .ban-btn:hover{
+    transform: translateX(40px);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+/*============================Organic===================*/
+.Organic{
+    background-color: var(--light-blue);
+    background-blend-mode: darken;
+}
+.Organic-section-child{
+    padding: 30px 0;
+}
+.Organic-details{
+    text-align: center;
+}
+.card-layout{
+    border-radius: 20px;
+}
+.Organic-details p{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 10px;
+    /* color: var(--color-black); */
+}
+.Organic-img img{
+    border-radius: 20px;
+}
+/*=================================gallery===================*/
+.gallery{
+    background-color: #87a2b3c2;
+    background-blend-mode: darken;
+}
+.gallery-section-child img{
+    border-radius: 30px;
+}
+.gallery-section-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+.gallery-layout{
+    position: relative;
+}
+.gallery-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.gallery-btn a{
+    padding: 2px;
+}
+/*=============================searvices-card=====================*/
+.searvices{
+    background-color: var(--light-blue);
+    background-blend-mode: darken;
+}
+.searvices-section-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.serv-layout{
+    max-width: 280px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.searvices p{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--color-black);
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sear-details p{
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    color: var(--color-darl-black);
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.sear-details .ban-btn{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.sear-details{
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    background: #aaaaaa86;
+    backdrop-filter: blue(10px) opacity(0.5);
+    bottom: -65%;
+    padding: 2.2rem;
+    transition: 0.7s;
+    border-radius: 20px;
+}
+.sear-details:hover{
+    bottom: 0;
+    transition: 0.7s;
+}
+.sear-img img{
+    border-radius: 20px;
+}
+/*=============================testimonials==========================*/
+.testimonials{
+    background-image: url(../img/ban-10.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: #012841cb;
+    background-blend-mode: darken;
+}
+.testimonials-section-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testimonials-card-layout{
+    position: relative;
+    max-width: 370px;
+    background-color: var(--white);
+    padding: 10px 10px;
+    color: var(--color-black);
+    border-radius: 30px;
+}
+.testimonials-card-layout:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+}
+.testimonials-one{
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+.testimonials-card-layout:nth-child(2){
+    background-color: var(--blue);
+    color: var(--white);
+    transform: scaleZ(1.5s);
+    transition: all 0.3s ease;
+
+}
+.testimonials-card-layout:nth-child(2):hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+.testimonials-details p{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.testimonials-img{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.testimonials-img img{
+    border-radius: 50%;
+}
+.img-name{
+    margin-left: 10px;
+}
+.img-name p{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.1;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-bottom: 3px
+}
+.img-name a i{
+    color: var(--yellow);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+/*============================about==========================*/
+.about{
+    background-color: #87a2b3c2;
+    background-blend-mode: darken;
+}
+.about-section-child{
+    margin: 0 -15px;
+}
+.about-one{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.about-layout{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-right-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about-left-card,
+.about-right-card{
+    width: 50%;
+    padding: 0 15px;
+}
+.abt-sale{
+    position: absolute;
+    right: -1%;
+    top: -5%;
+}
+.about-layout{
+    margin-bottom: 10px;    
+}
+.about-left-card p{
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
+.about .about-section-child .heading-3:hover{
+    transform: translateX(30px);
+    transition: all 0.2s ease;
+}
+.about .about-section-child .heading-4:hover{
+    transform: translateX(30px);
+    transition: all 0.2s ease;
+}
+.about .about-section-child p:hover{
+    transform: translateX(30px);
+    transition: all 0.2s ease;
+}
+.about .about-section-child .ban-btn:hover{
+    transform: translateX(30px);
+    transition: all 0.2s ease;
+}
+.about-img{
+    overflow: hidden;
+}
+.about-img img:hover{
+    transform: translatey(-20px);
+}
+.about-img img{
+    border-radius: 30px;
+}
+/*=============================clint-searvices=================*/
+.clients-section-child{
+   text-align: center;
+}
+.clients-services{
+    background-image: url(../img/ban-10.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-color: #012841cb;
+    background-blend-mode: darken;
+}
+.clients-details p{
+    font-family: "Roboto", sans-serif;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: center;
+}
+/*==============================contact=========================*/
+.contact{
+    background-color: var(--light-blue);
+    background-blend-mode: darken;
+}
+.contact-section-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.contact iframe{
+   max-width: 100%;
+   border-radius: 20px;
+   padding: 10px 0;
+}
+.contact-left-card {
+    display: flex;
+    align-items: center;
+}
+.contact-left-card,
+.contact-right-card{
+    background-color: #87a2b3c2;
+    width: 50%;
+    padding: 0 15px;
+}
+.form-details form label{
+   font-size: 20px;
+   text-transform: capitalize;
+   padding: 10px 0;
+   color: var(--light-white);
+}
+.form-details form input{
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--light-white);
+}
+.form-details form input::placeholder{
+    text-transform: capitalize;
+}
+.form-details{
+    padding-top: 10px;
+}
+.form-details .heading-3{
+    width: 20%;
+    text-align: center;
+    background-color: var(--light-black);
+    
+}
+/*=========================everything======================*/
+.everything{
+   background-image: url(../img/shoping-img.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: #33333349;
+   background-blend-mode: lighten;
+}
+.evrything-section-child p{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+.evrything-section-child .heading-2{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.input-card{
+    position: relative;
+    text-align: center;
+}
+.input-card input{
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+}
+.input-card input::placeholder{
+    text-transform: capitalize;
+}
+.input-card a{
+   position: absolute;
+   top: 2%;
+   right: 10%;
+}
+.input-card input:hover{
+    background-color: var(--light-black);
+   transform: scaleZ(0.2s);
+}
+/*================================footer==========================*/
+.footer{
+    background-color: var(--color-black);
+    color: var(--white);
+    padding: 100px 0px;
+    font-family: sans-serif;
+}
+.footer-child{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: auto;
+}
+.footer-column{
+    width: 25%;
+    padding: 0 16px;
+}
+.footer-top{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer-column ul{
+    padding: 0;
+}
+.footer-column ul li{
+    margin-bottom: 10px;
+}
+.footer-column{
+    font-size: 16px;
+}
+.footer-column ul li a{
+    display: block;
+    margin-bottom: 10px;
+    color: var(--light-black);
+    text-transform: capitalize;
+}
+.footer-column ul li a:hover{
+    color: var(--white);
+}
+.social-icons a{
+    margin-right: 10px;
+    font-size: 16px;
+    color: var(--light-black);
+}
+.social-icons li a:hover{
+    color: var(--white);
+} 
+
+.social-icons i:hover{
+    color: var(---deep-grean);
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-dark);
+    font-size: 14px;
+}
+.footer-bottom p{
+    color: var(--white);
+    font-size: 16px;
+}
+.social-icons span{
+    font-size: 16px;
+    justify-content: left; 
+    margin-left: 4px;
+}
+.social-icons i{
+    font-size: 15px;
+}
+.social-icons li{
+    margin: 0 10px 0 0;
+}
+.footer-column .logo{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: start;
+}
+/*=============================responciv====================*/
+@media (min-width:320px) and (max-width:575.99px) {
+    /*=============================heading============*/
+    h2,
+    .heading-2{
+        font-size: 13px;
+    }
+     h3,
+    .heading-3{
+        font-size: 17px;
+    }
+    h4,
+    .heading-4{
+        font-size: 17px;
+    }
+    /*======================btn====================*/
+    .ban-btn{
+        font-size: 13px;
+    }
+    /*==================header================*/
+    .header-icon a{
+        font-size: 10px;
+    }
+    .header-icon a i{
+        font-size: 10px;
+    }
+    .header-social-icon a i{
+        font-size: 10px;
+    }
+    /*====================navbar==================*/
+    .header-menu{
+       padding: 10px;
+    }
+    .nav-menu{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .nav-menu li{
+        padding: 10px 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    /*=========================banner================*/
+    .banner{
+        padding: 30px;
+    }
+    .banner-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-section-child span{
+        font-size: 12px;
+    }
+    h1,
+    .heading-1{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .banner .banner-text{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .banner-section-child p{
+        font-size: 12px;
+    }
+    /*====================groceries==============*/
+    .groceries{
+        padding: 20px 0;
+    }
+    .groceries-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .groceries-right-card .h4{
+        font-size: 10px;
+    }
+    .groceries-right-card p{
+        font-size: 10px;
+    }
+    .gro-det a span{
+        font-size: 10px;
+    }
+    .groceries-right-card .ban-btn span{
+        font-size: 10px;
+    }
+    .gro-det .ban-btn span{
+        font-size: 12px;
+    }
+    .groceries-left-card,
+    .groceries-right-card{
+       width: 100%; 
+    }
+    /* .groceries-section-child{
+        margin: 0 -15px;
+    } */
+    /*=================Organic============*/
+    .Organic-details p{
+        font-size: 14px;
+    }
+    .Organic{
+        padding: 20px 0;
+    }
+    /*=======================gallery==================*/
+    .gallery-section-child{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gallery{
+        padding: 20px 0;
+    }
+    /*==================searvices=================*/
+    .searvices{
+        padding: 20px 0;
+    }
+    .searvices-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv-layout{
+        margin: 10px 10px;
+    }
+    /*======================testimonials===============*/
+    .testimonials{
+        padding: 20px 0;
+    }
+    .testimonials-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials-card-layout{
+        margin: 10px 10px;
+    }
+    /*===================about==============*/
+    .about{
+        padding: 20px 0;
+    }
+    .about-layout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .about-left-card p{
+        font-size: 12px;
+    }
+    .about-section-child .ban-btn {
+        margin: 10px;
+    }
+    .about-section-child .ban-btn span{
+        font-size: 10px;
+    }
+    .about-section-child .ban-btn i{
+        font-size: 12px;
+    }
+    .about-left-card,
+    .about-right-card{
+        width: 100%;
+    }
+    /*=====================clients-services===============*/
+    .clients-services{
+        padding: 20px 0;
+    }
+    /*======================contact================*/
+    .contact{
+        padding: 20px 0;
+    }
+    .contact-section-child{
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left-card,
+    .contact-right-card{
+        width: 100%;
+    }
+    .form-details form label{
+        font-size: 13px;
+    }
+    /*===========================.evrything======================*/
+    .evrything{
+        padding: 20px 0;
+    }
+    .evrything-section-child p{
+        font-size: 13px;
+    }
+    .input-card a{
+        top: 5%;
+    }
+    /*========================footer================*/
+    .footer-section{
+        padding: 20px 0;
+    }
+    .footer-section{
+        padding: 30px 0;
+    }
+    .footer-child{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer-column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-column .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons {
+        justify-content: left;
+    }
+    .footer-top{
+        font-size: 17px;
+    }
+    .footer-column li a{
+        font-size: 13px;
+    }
+    .footer-column p{
+        font-size: 13px;
+    }
+    .social-icons span{
+        font-size: 13px;
+    }
+    .footer-bottom p{
+        font-size: 13px;
+    }
+}
+@media (min-width:576px) and (max-width:767.99px) {
+    /*======================btn====================*/
+    .ban-btn span{
+        font-size: 15px;
+    }
+    /*===================heading==============*/
+    h2,
+    .heading-2{
+        font-size: 25px;
+    }
+     h3,
+    .heading-3{
+        font-size: 20px;
+    }
+    h4,
+    .heading-4{
+        font-size: 17px;
+    }
+    /*==================header================*/
+    .header-icon a{
+        font-size: 12px;
+    }
+    .header-icon a i{
+        font-size: 12px;
+    }
+
+    /*====================navbar==================*/
+    .nav-menu{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .nav-menu li{
+        padding: 10px 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    /*============================banner======================*/
+    .banner-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner{
+        padding: 30px;
+    }
+    h1,
+    .heading-1{
+        font-size: 40px;
+    }
+    .banner .banner-text{
+        font-size: 40px;
+    }
+    .banner-section-child p{
+        font-size: 12px;
+    }
+    /*=====================groceries==========================*/
+    .groceries{
+        padding: 30px 0;
+    }
+    .groceries-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .groceries-right-card p{
+        font-size: 10px;
+    }
+    .gro-det a span{
+        font-size: 10px;
+    }
+    .groceries-right-card .ban-btn span{
+        font-size: 13px;
+    }
+    .groceries-left-card,
+    .groceries-right-card{
+       width: 100%; 
+    }
+    /*=======================gallery==================*/
+    .gallery-section-child{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gallery{
+        padding: 30px 0;
+    }
+    /*==============searvices=================*/
+    .searvices{
+        padding: 30px 0;
+    }
+    .searvices-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv-layout{
+        margin: 10px 10px;
+    }
+    /*======================testimonials===============*/
+    .testimonials{
+        padding: 30px 0;
+    }
+    .testimonials-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials-card-layout{
+        margin: 10px 10px;
+    }
+    /*===================about==============*/
+    .about{
+        padding: 30px 0;
+    }
+    .about-layout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-left-card,
+    .about-right-card{
+        width: 100%;
+    }
+    .about-one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .about-section-child .ban-btn{
+        margin: 10px 0;
+    }
+    .about-section-child .ban-btn span{
+        font-size: 12px;
+    }
+    /*=====================clients-services===============*/
+    .clients-services{
+        padding: 30px 0;
+    }
+    /*======================contact================*/
+    .contact{
+        padding: 30px 0;
+    }
+    .contact-section-child{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .form-details form label{
+        font-size: 15px;
+    }
+    .contact-left-card,
+    .contact-right-card{
+        width: 100%;
+    }
+    /*===========================evrything======================*/
+    .evrything{
+        padding: 30px 0;
+    }
+    .evrything-section-child p{
+        font-size: 13px;
+    }
+    .input-card a{
+        top: 4%;
+    }
+    /*========================footer================*/
+    .footer-section{
+        padding: 30px 0;
+    }
+    .footer-child{
+        flex-direction: column;
+        align-items: start;
+    }
+    .footer-column {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px; 
+    }
+    .social-icons {
+        justify-content: left;
+    }
+}
+@media (min-width:768px) and (max-width:991.99px) {
+    /*===================heading==============*/
+    h2,
+    .heading-2{
+        font-size: 30px;
+    }
+     h3,
+    .heading-3{
+        font-size: 20px;
+    }
+    h4,
+    .heading-4{
+        font-size: 17px;
+    }
+    /*====================navbar==================*/
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-menu li{
+          padding: 10px 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    /*============================banner======================*/
+    .banner{
+        padding: 50px;
+    }
+    h1,
+    .heading-1{
+        font-weight: 500;
+        font-size: 57px;
+    }
+    .banner .banner-text{
+        font-weight: 500;
+        font-size: 57px;
+    }
+    /*=========================groceries===========*/
+    .groceries{
+        padding: 50px 0;
+    }
+    .groceries-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .groceries-right-card p{
+        font-size: 13px;
+    }
+    .gro-det a span{
+        font-size: 10px;
+    }
+    .groceries-right-card .ban-btn span{
+        font-size: 13px;
+    }
+    .groceries-left-card,
+    .groceries-right-card{
+       width: 100%; 
+    }
+    /*========================organic==============*/
+    .Organic{
+        padding: 50px 0;
+    }
+    /*=====================gallery=============*/
+    .gallery{
+        padding: 50px 0;
+    }
+    /*==========================searvices==========*/
+    .searvices{
+        padding: 50px 0;
+    }
+    .searvices-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv-layout{
+        margin: 10px 10px;
+    }
+    /*======================testimonials===============*/
+    .testimonials{
+        padding: 50px 0;
+    }
+    .testimonials-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials-card-layout{
+        margin: 10px 10px;
+    }
+    /*===================about==============*/
+    .about{
+        padding: 50px 0;
+    }
+    .about-layout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .about-section-child .ban-btn{
+        margin: 10px;
+    }
+    .about-section-child .ban-btn span{
+        font-size: 15px;
+    }
+    .about-left-card,
+    .about-right-card{
+        width: 100%;
+    }
+    /*=====================clients-services===============*/
+    .clients-services{
+        padding: 50px 0;
+    }
+    /*======================contact================*/
+    .contact{
+        padding: 50px 0;
+    }
+    .contact-section-child{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left-card,
+    .contact-right-card{
+        width: 100%;
+    }
+    /*===========================evrything======================*/
+    .aboevrything{
+        padding: 50px 0;
+    }
+    .input-card a{
+        top: 3%;
+    }
+    /*========================footer================*/
+    .footer-section{
+        padding: 50px 0;
+    }
+    .footer-column {
+        width: 50%;
+        padding: 20px;
+    }
+}
+@media (min-width:992px) and (max-width:1199.99px) {
+    /*===================heading==============*/
+    h2,
+   .heading-2{
+        font-size: 37px;
+    }
+    h3,
+    .heading-3{
+        font-size: 20px;
+    }
+    h4,
+    .heading-4{
+        font-size: 17px;
+    }
+    /*====================navbar==================*/
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-menu li{
+          padding: 10px 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .logo img{
+        width: 80px;
+    }
+    /*======================banner========================*/
+    .banner{
+      padding: 60px;
+    }
+    h1,
+    .heading-1{
+        font-size: 60px;
+    }
+    .banner .banner-text{
+        font-size: 60px;
+    }
+    /*=========================groceries===========*/
+    .groceries{
+        padding: 80px 0;
+    }
+    .groceries-right-card p{
+        font-size: 15px;
+    }
+    .gro-det a span{
+        font-size: 15px;
+    }
+    .groceries-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .groceries-left-card,
+    .groceries-right-card{
+       width: 100%; 
+    }
+    /*======================Organic===================*/
+    .Organic{
+        padding: 80px 0;
+    }
+    /*====================gallery=================*/
+    .gallery{
+        padding: 80px 0;
+    }
+    /*=============================searvices===================*/
+    .searvices{
+        padding: 80px 0;
+    }
+    .searvices-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .serv-layout{
+        margin: 10px 10px;
+    }
+    /*======================testimonials===============*/
+    .testimonials{
+        padding: 80px 0;
+    }
+    .testimonials-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials-card-layout{
+        margin: 10px 10px;
+    }
+    /*=========================about==================*/
+    .about{
+        padding: 80px 0;
+    }
+    .about-layout{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-one{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .about-section-child .ban-btn{
+        margin: 10px;
+    }
+    .about-section-child .ban-btn span{
+        font-size: 15px;
+    }
+    .about-left-card,
+    .about-right-card{
+        width: 100%;
+    }
+    /*=====================clients-services===============*/
+    .clients-services{
+        padding: 80px 0;
+    }
+    /*======================contact================*/
+    .contact{
+        padding: 80px 0;
+    }
+    .contact-section-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-left-card,
+    .contact-right-card{
+        width: 100%;
+    }
+    .form-details form label{
+        font-size: 20px;
+    }
+    /*===========================evrything======================*/
+    .about{
+        padding: 80px 0;
+    }
+    .input-card a{
+        top: 2%;
+    }
+    /*========================footer================*/
+    .footer-section{
+        padding: 80px 0;
+    }
+}
+@media (min-width:1200px) and (max-width:1399.99px) {
+    
+}
+
+
